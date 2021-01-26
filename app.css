@@ -1,0 +1,68 @@
+html, body {
+    font-family: 'Courier New';
+    padding: 0;
+    margin: 0;
+    line-height: 2em;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width:100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  header {
+    padding: 20px;
+    flex: 2;
+    text-align: center;
+    border-right: 1px #000 solid;
+    min-height: 100px; 
+    font-size: 24px;
+    
+  }
+  section {
+    padding: 20px 50px;
+    flex: 5;
+    border-right: 1px #000 solid;
+    min-height: 200px; 
+  
+  }
+  
+  .terminal_emulator__field:before,
+  .terminal_emulator__command:before {
+      left:0;
+      top: 0;
+      content:">";
+      margin-right: 1em;
+   }
+  
+  .terminal_emulator__field:after {
+      right: 0;
+      bottom: 0.25em;
+      content: "";
+      width: 1em;
+      height: 1.5em;
+      background: #000;
+      -webkit-animation: caretBlink 1s infinite;
+      animation: caretBlink 1s infinite;
+  }
+  
+  
+  @keyframes caretBlink {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+      opacity: 0;
+    }
+    
+    51% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
